@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accenture Paid Internship</title>
+    <title>Prank Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .achievement {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 2px solid #ddd;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hover effect for the last Yes button */
+        #moving-yes {
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #moving-yes:hover {
+            left: calc(50px - 100px * Math.random());
+            top: calc(50px - 100px * Math.random());
+        }
+    </style>
 </head>
+
 <body>
-    <div></div>
+    <h1>Welcome to [Name]'s "Glorious" Achievements</h1>
+    <div class="achievement">
+        <h2>Achievement 1: "Most Useless Trophy Winner"</h2>
+        <img src="https://placekitten.com/200/200" alt="Worst Image 1">
+        <p>He won this amazing trophy... for literally doing nothing. Wow, such a proud moment!</p>
+    </div>
+
+    <div class="achievement">
+        <h2>Achievement 2: "Failed All Exams but Still Attended Graduation"</h2>
+        <img src="https://placebear.com/200/200" alt="Worst Image 2">
+        <p>They didn't pass a single exam but managed to attend the graduation anyway. Truly inspirational!</p>
+    </div>
+
+    <div class="achievement">
+        <h2>Achievement 3: "Master of Procrastination"</h2>
+        <img src="https://placekitten.com/200/200" alt="Worst Image 3">
+        <p>This person can delay anything. Deadlines? What's that? Master level of procrastination achieved.</p>
+    </div>
+
+    <!-- Sound element to play in the background -->
+    <audio id="prankSound" src="./laddu.mp3"></audio>
+
+    <!-- Start of questionnaire -->
+    <button class="button" onclick="playSoundAndRedirect()">Proceed to next page ></button>
+
+    <script>
+        function playSoundAndRedirect() {
+            var audio = document.getElementById('prankSound');
+            audio.play();
+        }
+    </script>
+
+
 </body>
+
 </html>
