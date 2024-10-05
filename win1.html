@@ -24,10 +24,17 @@
     <audio id="prankSound" src="./laddu.mp3"></audio>
 
     <!-- Start of questionnaire -->
-    <a href="win2.html">
-        <button
-            style="padding: 10px 20px; margin: 20px auto; background-color: #007BFF; color: white; border: none; font-size: 18px; cursor: pointer;">Proceed
-            to next page ></button></a>
+    <button onclick="playSoundAndRedirect()"
+        style="padding: 10px 20px; margin: 20px auto; background-color: #007BFF; color: white; border: none; font-size: 18px; cursor: pointer;">Proceed
+        to next page ></button>
+
+    <script>
+        function playSoundAndRedirect() {
+            var audio = document.getElementById('prankSound');
+            audio.play();
+            // Redirect logic can be added here if necessary.
+        }
+    </script>
 
 
 </body>
