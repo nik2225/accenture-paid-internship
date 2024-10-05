@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accenture Paid Internship</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; margin: 0; padding: 0;">
+    <h1 style="color: red; padding: 20px;">Welcome to [Name]'s "Glorious" Achievements</h1>
+
+    <div class="achievement"
+        style="background-color: #f8f9fa; padding: 20px; border: 2px solid #ddd; margin: 10px auto; width: 80%; max-width: 400px; display: block;">
+        <h2 style="color: #333; font-size: 20px;">Achievement 3: "Master of Procrastination"</h2>
+        <img src="https://placekitten.com/200/200" alt="Worst Image 3"
+            style="width: 100%; height: auto; border-radius: 10px;">
+        <p>This person can delay anything. Deadlines? What's that? Master level of procrastination achieved.</p>
+    </div>
+
+    <!-- Sound element to play in the background -->
+    <audio id="prankSound" src="./laddu.mp3"></audio>
+
+    <!-- Start of questionnaire -->
+    <button onclick="playSoundAndRedirect()"
+        style="padding: 10px 20px; margin: 20px auto; background-color: #007BFF; color: white; border: none; font-size: 18px; cursor: pointer;">Proceed
+        to next page ></button>
+
+    <script>
+        function playSoundAndRedirect() {
+            var audio = document.getElementById('prankSound');
+            audio.play();
+            // Redirect logic can be added here if necessary.
+        }
+    </script>
+</body>
+
+</html>
